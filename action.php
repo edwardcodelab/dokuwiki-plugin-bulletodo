@@ -10,17 +10,25 @@
 
 class action_plugin_bulletodo extends \dokuwiki\Extension\ActionPlugin
 {
-    function register(Doku_Event_Handler $controller) {
-             $controller->register_hook('TPL_ACT_RENDER', 'AFTER', $this, 'bulletlist');
+function register(Doku_Event_Handler $controller) {
+             $controller->register_hook('TOOLBAR_DEFINE', 'AFTER', $this, 'bullet_button', array ());
  		}
              
-public function bulletlist(Doku_Event $event,$param) {
-        $beforesymbol = $this->getConf('before_symbol');
-        $aftersymbol = $this->getConf('after_symbol');
-    echo '<p>'.$beforesymbol.$aftersymbol.'</p>';
-    echo'<script>
-    var STbullet = ["'.$beforesymbol.'"];
-var SBbullet = ["'.$aftersymbol.'"];
-    </script>';
+function insert_button(Doku_Event $event, $param) {
+    $event->data[] = array (
+        'type' => 'format',
+        'title' => $this->getLang('abutton'),
+        'icon' => '../../plugins/bulletodo/button.png',
+        'list': {
+        '#d ':           '⏺',
+        '#c':       '○',
+        '#l': '⇦',
+        '#r':   '⇨',
+        '#t':   '△',
+        '#bt':   '▲',
+        '#lt':   '⏴',
+        '#rt':   '⏵'
+    }
+        'block' => false,
 }
 }
