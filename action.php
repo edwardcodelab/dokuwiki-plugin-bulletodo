@@ -61,5 +61,5 @@ function insert_button(Doku_Event $event, $param) {
             'title' =>'⏵',
             ) 
         ));
-};
+}
 }
