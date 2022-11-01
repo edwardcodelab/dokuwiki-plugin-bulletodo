@@ -1,3 +1,4 @@
+jQuery(document).ready(function(){
 var STbullet = ['#d','#c','#l','#r','#t','#bt','#lt','#rt'];
 var SBbullet = ['⏺','○','⇦','⇨','△','▲','⏴','⏵'];
 jQuery('.todoinnertext').each(function(){
@@ -12,5 +13,7 @@ jQuery('.todoinnertext').each(function(){
        }
     }
  });
+});
+
 
 
