@@ -14,7 +14,9 @@ class action_plugin_bulletodo extends \dokuwiki\Extension\ActionPlugin
              $controller->register_hook('TPL_ACT_RENDER', 'AFTER', $this, 'bulletlist');
  		}
              
-function bulletlist(Doku_Event $event,$param) {
+public function bulletlist(Doku_Event $event,$param) {
+      if($event->data != 'bulletodo') return; 
+    $event->preventDefault(); 
         $beforesymbol = $this->getConf('before_symbol');
         $aftersymbol = $this->getConf('after_symbol');
     echo '<p>'.$beforesymbol.$aftersymbol.'</p>';
