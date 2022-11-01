@@ -60,6 +60,6 @@ function insert_button(Doku_Event $event, $param) {
             'insert'=>'#rt',
             'title' =>'⏵',
             ) 
-        ))
+        ));
 };
 }
