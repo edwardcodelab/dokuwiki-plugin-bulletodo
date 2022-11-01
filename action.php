@@ -29,6 +29,6 @@ function insert_button(Doku_Event $event, $param) {
         '#lt':   '⏴',
         '#rt':   '⏵'
     },
-        'block' => false)
+        'block' => false);
 }
 }
