@@ -15,6 +15,7 @@ function register(Doku_Event_Handler $controller) {
  		}
  function bulletshow($event, $param) {
    echo"";
-    }
+   
+ }
   
 }
