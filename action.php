@@ -19,15 +19,15 @@ function insert_button(Doku_Event $event, $param) {
         'type' => 'format',
         'title' => $this->getLang('abutton'),
         'icon' => '../../plugins/bulletodo/button.png',
-        'list': {
-        '#d ':           '⏺',
-        '#c':       '○',
+        'list'=> {
+        '#d ': '⏺',
+        '#c':  '○',
         '#l': '⇦',
-        '#r':   '⇨',
-        '#t':   '△',
-        '#bt':   '▲',
-        '#lt':   '⏴',
-        '#rt':   '⏵'
+        '#r': '⇨',
+        '#t': '△',
+        '#bt': '▲',
+        '#lt': '⏴',
+        '#rt': '⏵'
     },
         'block' => false);
 }
