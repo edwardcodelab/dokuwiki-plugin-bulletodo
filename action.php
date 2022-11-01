@@ -16,8 +16,7 @@ class action_plugin_bulletodo extends \dokuwiki\Extension\ActionPlugin
              
 function bulletlist($event,$param) {
         $beforesymbol = $this->getConf('before_symbol');
-                $aftersymbol = $this->getConf('after_symbol');
-
+        $aftersymbol = $this->getConf('after_symbol');
     echo '<p>'.$beforesymbol.$aftersymbol.'</p>';
     echo'<script>
     var STbullet = ["'.$beforesymbol.'"];
