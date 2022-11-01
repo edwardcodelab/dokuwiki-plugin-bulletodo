@@ -1,6 +1,6 @@
 jQuery(document).ready(function(){
 var STbullet = ['#d','#c','#l','#r','#t','#bt','#lt','#rt'];
-var SBbullet = ['⏺','○','⇦','⇨','△','▲','⏴','⏵'];
+var SBbullet = ['⚫','○','⇦','⇨','△','▲','⏴','⏵'];
 jQuery('.todoinnertext').each(function(){
         var rawtext=jQuery(this).text();
 		       console.log(rawtext);
