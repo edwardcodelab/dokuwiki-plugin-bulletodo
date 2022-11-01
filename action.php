@@ -59,7 +59,7 @@ function insert_button(Doku_Event $event, $param) {
             'type'=>'insert',
             'insert'=>'#rt',
             'title' =>'⏵',
-            ) 
+            ) ,
         ));
 }
 }
