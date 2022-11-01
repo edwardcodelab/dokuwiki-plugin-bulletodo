@@ -28,7 +28,7 @@ function insert_button(Doku_Event $event, $param) {
         '#bt':   '▲',
         '#lt':   '⏴',
         '#rt':   '⏵'
-    }
-        'block' => false,
+    },
+        'block' => false)
 }
 }
