@@ -1,5 +1,5 @@
-//var STbullet = ['#d','#c','#l','#r','#t','#bt','#lt','#rt'];
-//var SBbullet = ['⏺','○','⇦','⇨','△','▲','⏴','⏵'];
+var STbullet = ['#d','#c','#l','#r','#t','#bt','#lt','#rt'];
+var SBbullet = ['⏺','○','⇦','⇨','△','▲','⏴','⏵'];
 jQuery('.todoinnertext').each(function(){
         var rawtext=jQuery(this).text();
 	for(var i = 0; i < STbullet.length; i+=1) {
