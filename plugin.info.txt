@@ -1,0 +1,7 @@
+base   bulletodo
+author dodotori @ dokuwiki forum
+email  dodotori@localhost
+date   2022-11-01
+name   bulletodo plugin
+desc   bullet journal symbol plugin
+url    https://github.com/edwardcodelab/dokuwiki-plugin-bulletodo
