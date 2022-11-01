@@ -11,7 +11,7 @@
 class action_plugin_bulletodo extends \dokuwiki\Extension\ActionPlugin
 {
     function register(Doku_Event_Handler $controller) {
-             $controller->register_hook('TPL_ACT_RENDER', 'BEFORE', $this, 'bulletlist');
+             $controller->register_hook('TPL_ACT_RENDER', 'AFTER', $this, 'bulletlist');
  		}
              
 function bulletlist(Doku_Event $event,$param) {
