@@ -16,19 +16,51 @@ function register(Doku_Event_Handler $controller) {
              
 function insert_button(Doku_Event $event, $param) {
     $event->data[] = array (
-        'type' => 'format',
-        'title' => $this->getLang('abutton'),
+        'type' => 'picker',
+        'title' => 'Bullettodo',
         'icon' => '../../plugins/bulletodo/button.png',
-        'list'=> {
-        '#d ': '⏺',
-        '#c':  '○',
-        '#l': '⇦',
-        '#r': '⇨',
-        '#t': '△',
-        '#bt': '▲',
-        '#lt': '⏴',
-        '#rt': '⏵'
-    },
-        'block' => false);
+        'list'=> array(
+        array(
+            'type'=>'insert',
+            'insert'=>'#d',
+            'title' =>'⏺',
+            ),
+          array(
+            'type'=>'insert',
+            'insert'=>'#c',
+            'title' =>'○',
+            ),          
+          array(
+            'type'=>'insert',
+            'insert'=>'#l',
+            'title' =>'⇦',
+            ),                 
+          array(
+            'type'=>'insert',
+            'insert'=>'#r',
+            'title' =>'⇨',
+            ),             
+          array(
+            'type'=>'insert',
+            'insert'=>'#t',
+            'title' =>'△',
+            ),             
+          array(
+            'type'=>'insert',
+            'insert'=>'#bt',
+            'title' =>'▲',
+            ),  
+          array(
+            'type'=>'insert',
+            'insert'=>'#lt',
+            'title' =>'⏴',
+            ),  
+          array(
+            'type'=>'insert',
+            'insert'=>'#rt',
+            'title' =>'⏵',
+            ) 
+        )
+    );
 }
 }
