@@ -9,10 +9,10 @@ jQuery('.todotext clickabletodo todohlght').each(function(){
 	var Wbullet = SBbullet;
 	}
 
-    var rawtext=jQuery(this).('.todoinnertext').text();
+    var rawtext=jQuery(this).jQuery('.todoinnertext').text();
 	console.log(rawtext);
 	for(var i = 0; i < STbullet.length; i+=1) {
-       if (jQuery(this).('.todoinnertext').text().match(Wbullet[i])){
+       if (jQuery(this).jQuery('.todoinnertext').text().match(Wbullet[i])){
           var newtext= rawtext.replace(STbullet[i], Wbullet[i]);
 	      jQuery(this).text(newtext);
 	       console.log(newtext);
